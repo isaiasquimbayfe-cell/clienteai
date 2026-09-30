@@ -1,0 +1,1 @@
+{"name":"clienteai","version":"1.2.0","private":true,"scripts":{"start":"node server.js"},"dependencies":{"express":"^5.1.0","better-sqlite3":"^12.4.1"}}

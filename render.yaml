@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: clienteai
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        value: gpt-5.6-luna
+    disk:
+      name: clienteai-data
+      mountPath: /opt/render/project/src/data
+      sizeGB: 1
